@@ -1,0 +1,15 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #FF3D00;
+    animation: nev 5s infinite alternate;
+
+    @keyframes nev {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,421 @@
+.body {
+    display: flex;
+    flex-flow:column;
+}
+
+.one {
+    margin-bottom:10px ;
+    color: red;
+    width: 150px;
+    background: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+}
+
+.one:hover {
+    background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #777);
+}
+
+.two {
+    margin-bottom:10px ;
+    width: 150px;
+    color: red;
+    background: whitesmoke;
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+    position: relative;
+}
+
+.two:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(148, 144, 143, 0.4);
+    border-radius: 5px;
+    transition: all 0.5s ease-out;
+}
+
+.two:hover:before {
+    height: 42px;
+}
+
+.three {
+    margin-bottom:10px ;
+    width: 150px;
+    color: red;
+    background: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+}
+
+.three:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.elementy {
+    margin-bottom:10px ;
+    width: 150px;
+    color: red;
+    background: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+    -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.elementy:hover {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+}
+
+.five {
+    margin-bottom:10px ;
+    width: 150px;
+    color: red;
+    background: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+    transition: all 500ms ease-out;
+}
+
+.five:hover {
+    transform: skew(10deg);
+}
+
+.six {
+    margin-bottom:10px ;
+    width: 150px;
+    color: red;
+    background: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+    transition: all 500ms ease-out;
+}
+
+.six {
+    box-shadow: 0px 0px 0px 2px #f90914,
+        0px 0px 0px 7px #a7f9c9,
+        0px 0px 0px 9px #f90914,
+        0px 0px 5px 10px #ff4d00;
+}
+
+.seven {
+    margin-bottom:10px ;
+    width: 150px;
+    color: red;
+    background: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+    position: relative;
+    transition: all 500ms ease-out;
+    transform-style: preserve-3d;
+}
+
+.seven:after {
+    content: 'Кнопка';
+    position: absolute;
+    top: -50%;
+    left: 0px;
+    width: 100%;
+    background: #fdeaa8;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+}
+
+.seven:hover {
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+}
+
+.eight {
+    margin-bottom:10px ;
+    width: 150px;
+    background: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #444);
+    background: -webkit-radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #444);
+    width: 90px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.eight:after {
+    width: 80%;
+    color: red;
+    font-family: 'Lucida Console';
+    font-size: 18px;
+    text-align: center;
+    content: attr(title);
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transition: all 550ms ease-in-out;
+    transition: all 550ms ease-in-out;
+    -webkit-transform: scale(0) rotate(-360deg) translateY(-50%);
+    transform: scale(0) rotate(-360deg) translateY(-50%);
+    z-index: 3;
+}
+
+.eight:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg) translateY(-50%);
+    transform: scale(1) rotate(0deg) translateY(-50%);
+}
+
+.nine {
+    margin-bottom:10px ;
+    width: 150px;
+    background: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #444);
+    background: -webkit-radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #444);
+    width: 90px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.nine:after {
+    width: 80%;
+    color: red;
+    font-family: 'Lucida Console';
+    content: attr(title);
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: scale(0) translateY(-50%);
+    transform: scale(0) translateY(-50%);
+    -webkit-transition: all 550ms ease-in-out;
+    transition: all 550ms ease-in-out;
+    z-index: 3;
+}
+
+.nine:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(-50%);
+    transform: scale(1) translateY(-50%);
+}
+
+.ten {
+    margin-bottom:10px ;
+    width: 150px;
+    color: red;
+    background: white;
+    padding: 10px 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px;
+    position: relative;
+}
+
+.ten img {
+    position: absolute;
+    top: 7px;
+    left: -30px;
+    transition: all 200ms ease;
+}
+
+.ten:hover img {
+    left: 5px;
+}
+
+.tower {
+    margin-bottom:90px ;
+    position: relative;
+}
+
+.round {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 4px solid hsl(5, 40%, 70%);
+    border-radius: 50%/50%;
+    background: linear-gradient(top, hsl(0, 90%, 90%), hsl(0, 100%, 50%) 80%);
+    background: -webkit-linear-gradient(top, hsl(0, 90%, 90%), hsl(0, 100%, 50%) 80%);
+    transform: rotate(30deg);
+}
+
+.round:active {
+    width: 69px;
+    height: 69px;
+    box-shadow: 0 0 hsl(5, 60%, 60%);
+    border: 3px solid hsl(5, 40%, 70%);
+    background: linear-gradient(top, hsl(0, 90%, 90%), hsl(0, 100%, 50%) 90%);
+    background: -webkit-linear-gradient(top, hsl(0, 90%, 90%), hsl(0, 100%, 50%) 90%);
+
+}
+
+.switch {
+    margin-bottom:20px ;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dot {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: hsl(0, 0%, 90%);
+    box-shadow:
+        0 3px 5px hsl(0, 0%, 75%),
+        inset 0 1px 0 hsl(0, 0%, 95%),
+        inset 0 -5px 5px hsl(0, 0%, 75%),
+        inset 0 5px 5px hsl(0, 0%, 95%);
+}
+
+.circ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: linear-gradient(#ccc, #fff);
+    background: -webkit-linear-gradient(#ccc, #fff);
+    box-shadow:
+        inset 0 2px 1px hsl(0, 0%, 75%),
+        inset 0 -2px hsl(0, 0%, 75%);
+}
+
+.switch .dot:before {
+    content: "";
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background: radial-gradient(#fff, #333);
+    background: -webkit-radial-gradient(#fff, #333);
+}
+
+.switch:active .dot:before {
+    content: "";
+    background: radial-gradient(#fff, #02A829);
+    background: -webkit-radial-gradient(#fff, #02A829);
+}
+
+.switch:active .dot {
+    background: radial-gradient(#fff, #ccc);
+    background: -webkit-radial-gradient(#fff, #ccc);
+    width: 69px;
+    height: 69px;
+}
+
+.switch1 {
+    width: 75px;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dot1 {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    display: block;
+    width: 75px;
+    height: 45px;
+    border-radius: 7px;
+    background: linear-gradient(hsl(0, 0%, 90%), hsl(0, 0%, 96%));
+    box-shadow: -3px 5px hsl(0, 0%, 75%),
+        1px -2px hsl(0, 0%, 75%),
+        inset 0 0px 5px hsl(0, 0%, 95%),
+        inset 0 -1px 5px hsl(0, 0%, 95%);
+    z-index: 1;
+}
+
+.circ1 {
+    display: block;
+    position: absolute;
+    width: 87px;
+    height: 57px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(hsl(0, 0%, 96%), hsl(0, 0%, 90%));
+    box-shadow:
+        inset 0 1px 1px hsl(0, 0%, 95%),
+        inset 0 -1px 1px hsl(0, 0%, 95%);
+}
+
+.dot1:before {
+    content: "Enter";
+    color: hsl(0, 0%, 60%);
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    font-size: 20px;
+}
+
+.switch1:active .dot1:before {
+    content: "Enter";
+}
+
+.switch1:active .dot1 {
+    background: radial-gradient(hsl(0, 0%, 96%), hsl(0, 0%, 90%));
+    box-shadow: -2px 4px hsl(0, 0%, 75%),
+        0px -1px hsl(0, 0%, 75%),
+        inset 0 1px 2px hsl(0, 0%, 95%),
+        inset 0 -1px 2px hsl(0, 0%, 95%);
+}
+
+.blok101 {
+    margin-top: 20px;
+    max-width: 60px;
+    padding: 1em;
+    border-radius: 10px;
+    background: rgb(100, 100, 100) radial-gradient(circle at 0 0, rgba(255, 255, 255, .65), rgba(255, 255, 255, .35));
+    box-shadow: inset rgba(0, 0, 0, .5) -3px -3px 8px, inset rgba(255, 255, 255, .9) 3px 3px 8px, rgba(0, 0, 0, .8) 3px 3px 8px -3px;
+}
+
+.blok101:hover {
+    transform: skewX(10deg);
+}
+
+.blok101:active {
+    color: red;
+    max-width: 55px;
+    padding: 1em;
+    border-radius: 8px;
+    background: rgb(100, 100, 100) radial-gradient(circle at 0 0, rgba(255, 255, 255, .65), rgba(255, 255, 255, .35));
+}
